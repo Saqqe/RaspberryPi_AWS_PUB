@@ -1,0 +1,5 @@
+.env
+/home/saqqe/aws_cert/
+*.pem
+*.key
+*.crt
