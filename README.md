@@ -17,7 +17,7 @@ A simple project demonstrating how to publish CPU temperature data from a Raspbe
 ## Overview
 This repository provides a quick-start project that collects and publishes mock data (CPU temperature) from a Raspberry Pi to AWS IoT Core using Python3 and the AWS Python SDK (v2). You can use it as a base template or learning reference for building more advanced IoT applications.
 
-![architecture diagram](RaspberryPI_AWS_IoT_PUB_Current.png)
+![architecture diagram](drawio/RaspberryPI_AWS_IoT_PUB_Current.png)
 
 ## Prerequisites
 - **Hardware**: Raspberry Pi (tested on Raspberry Pi 2 B with 32-bit Raspberry Pi OS Lite, kernel 6.6, Debian 12 / Bookworm).
