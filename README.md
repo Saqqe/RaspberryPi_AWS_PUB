@@ -9,7 +9,6 @@ A simple project demonstrating how to publish CPU temperature data from a Raspbe
   - [Prerequisites](#prerequisites)
   - [Setup \& Configuration](#setup--configuration)
     - [Raspberry Pi](#raspberry-pi)
-    - [AWS](#aws)
   - [Usage](#usage)
   - [Testing with CPU Burner](#testing-with-cpu-burner)
   - [Roadmap](#roadmap)
@@ -53,7 +52,21 @@ This repository provides a quick-start project that collects and publishes mock 
    - Navigate to **AWS IoT Core**
    - Use the **Connect a device** wizard to create and download your certificates and keys.
      - Get this over to your Raspberry Pi folder `~/aws_credentials`
+  
+4. **Configure Environment Variables on RaspberryPi**:
+   ```bash   
+   nano .env # open .env
+   ```
+Add the following lines to .env and change according to your needs
 
+   ```bash
+   AWS_ENDPOINT = 'Your AWS endpoint'
+   CLIENT_ID = 'what ever you want to name your device'
+   TOPIC = 'raspberrypi/mqtt/test'
+   CA_CERT_PATH = 'AmazonRooTCert'
+   CERT_PATH = 'DeviceCert'
+   PRIVATE_KEY_PATH = 'Your private key'
+   ```	
 ## Usage
 1. **Run the Python Script**:
    ```bash
